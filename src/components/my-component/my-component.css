@@ -1,0 +1,41 @@
+.drop-down {
+    display: flex;
+    flex-direction: column;
+}
+.drop-down input {
+    border: none;
+    border: #FFC107 2px solid;
+    border-radius: 4px;
+    line-height: 38px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.drop-down input:focus {
+    outline: none;
+}
+.item {
+    height: 43.6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFC107;
+}
+.result-wrapper {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: 0.7s;
+}
+.item:hover {
+    background-color: rgba(255, 193, 7, 0.678);
+    cursor: pointer;
+}
+.item p{
+    font-size: 18px;
+    color: #fff;
+}
+.show {
+    max-height: 306px;
+}
+.hide {
+    height: 0;
+}

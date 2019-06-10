@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <script type="module" src="/build/p1-web-components.esm.js"></script>
+  <script nomodule src="/build/p1-web-components.js"></script>
+
+</head>
+<body>
+  
+  <my-component></my-component>
+
+  <h2>Selected Item : <span></span></h2>
+  <script>
+    const todoListElement = document.querySelector('my-component');
+    todoListElement.addEventListener('selectedItem', event => { document.querySelector('h2 > span').innerHTML = event.detail.title })
+  </script>
+
+</body>
+</html>
